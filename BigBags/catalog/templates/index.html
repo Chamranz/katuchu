@@ -1,0 +1,27 @@
+{% extends "blocks.html" %}
+
+{% block content %}
+<div class="mainpage">
+  <img src="static/images/mainpng4.jpg" style="width:101.3%; height:140%; margin-left:-8px">
+  <div class="indexdiv">
+    <a class="indextext">Cделано в Умуртии</a>
+  </div>
+   <form method="POST">
+                <a href="#" class="button open-popup">В корзину</a>
+                <div class="popup_bg">
+                        <div class="popup">
+                                {% for post in latest %}
+                                <img src="{{ post.crest }}" class="close-popup" alt="icon">
+                                <p>{{ post.textfield}}</p>
+                                {% endfor %}
+                                <p>Оставьте завявку</p>
+                        </div>
+                </div>
+                </form>
+  <div class="indexbutton">
+    <a class="indexbuttonstyle" class="sidebar-style" href="{% url 'check' %}"> О НАС</a>
+    <a class="indexbuttonstyle" href="{% url 'Bag' %}" >КАТАЛОГ</a>
+  </div>
+</div>
+
+{% endblock %}

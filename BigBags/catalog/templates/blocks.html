@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="html">
+    {% block title %}<div class ='NameText'><title>  KATUCHU </title> </div>{% endblock %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+    {% load static %}
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+    <link href="{% static 'css/sumstyle2.css' %}" rel="stylesheet">
+    <link href="{% static 'css/detail4.css' %}" rel="stylesheet">
+    <link href="{% static 'css/Forms3.css' %}" rel="stylesheet">
+    <link href="{% static 'css/register.css' %}" rel="stylesheet">
+</head>
+{% block header %}
+<header class="Header">
+
+      <div class="sidebar-nav">
+          <a href="{% url 'Bag' %}" class="sidebar-style">Каталог</a>
+          <a  class="sidebar-style">О магазине</a>
+          <a  class="sidebar-style">Контакты</a>
+          {% if user.is_authenticated %}
+          <a  href="{% url 'my-basket' %}" class="sidebar-style">Корзина</a>
+          <a href="{% url 'logout' %}?next={{request.path}}" class="sidebar-style">Выход из аккаунта </a>
+          {% else %}
+          <a href="{% url 'login' %}?next={{request.path}}" class="sidebar-style">Вход</a>
+          <a href="{% url 'register' %}?next={{request.path}}" class="sidebar-style">Регистрация</a>
+          {% endif %}
+      </div>
+    <div class="container">
+    <font size=7, color="#1f2023" > <a href="{% url 'index' %}" class="HeaderName">KatyChu</a> </font>
+    </div>
+</header>
+
+
+{% endblock %}
+
+
+<body class="html">
+ <div class="container-fluid">
+
+      {% block content %}
+     {% endblock %}
+     {% block pagination %}
+     {% if is_paginated %}
+     <div class="pagination">
+         <span class="page-links">
+             {% if page_obj.has_previous %}
+             <a href="{{request.path}}?page={{page_obj.previous_page_number}}">Предыдущая</a>
+             {% endif %}
+             <span class="page-current">
+                 Страница {{ page_obj.number }} из {{ page_obj.paginator.num_pages }}
+             </span>
+             {% if page_obj.has_next %}
+             <a href="{{request.path}}?page={{page_obj.next_page_number}}">Следующая</a>
+             {% endif %}
+         </span>
+         </div>
+     {% endif %}
+     {% endblock %}
+      {% block footer %}
+         {% block copyright %}
+     <footer class="footer">
+     <div >
+       <p>Copyright ООО "KatyChu", 2023. Все права защищены</p>
+         </div>
+         </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/static/js/scripts.js"></script>
+    <script src="/static/js/popup2.js"></script>
+
+         {% endblock %}
+      {% endblock %}
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

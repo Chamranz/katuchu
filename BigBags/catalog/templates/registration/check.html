@@ -1,0 +1,11 @@
+{% extends 'blocks.html' %}
+{% block content %}
+{% for i in mod %}
+{% load static %}
+
+<img src="{% static 'crest.jpg' %}">
+
+<img src="{{i.crest}}" style="width:101.3%; height:140%; margin-left:-8px">
+<h1>{{i.textfield}}</h1>
+{% endfor %}
+{% endblock %}

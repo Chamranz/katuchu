@@ -1,0 +1,17 @@
+{% extends 'blocks.html' %}
+
+{% block content %}
+
+<h1> Корзина </h1>
+{% if bag_list %}
+<ul>
+    {% for baginst in bag_list %}
+    <li class="{% if baginst.is_overdue %} text-danger{% endif %}">
+    <a href="{% url 'bag-detail' bag.bag.pk %}"> {{baginst.bag.title}} </a>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>Нет сумок в коризне, братан</p>
+{% endif %}
+{% endblock %}

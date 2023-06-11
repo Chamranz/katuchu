@@ -1,0 +1,39 @@
+{% extends "blocks.html" %}
+
+{% block content %}
+
+<div class="filter">
+<li><a class="filterName"> Фильтры </a></li>
+
+   <form method="post" , class = 'Choose'>
+  {{ form.as_p }}
+  <input type="submit" value="Применить" class="ButtonChoose">
+</form>
+</div>
+
+{% if bag_list %}
+<ul class="PhotoLocation">
+    {% for bag in bag_list %}
+    <div class="PhotoBlocks" >
+        <a href="{{ bag.get_absolute_url }}"><img src="{{ bag.image.url }}" class="photo" ></a>
+       <p><a href="{{ bag.get_absolute_url }}" class="BagName">
+            {{ bag.title }}
+        </a> </p>
+    </div>
+    {% endfor %}
+</ul>
+{% else %}
+<p>Пока нет сумок</p>
+{% endif %}
+{% endblock %}
+
+ <div class="popup_bg" id="popup_bg">
+                        <div class="popup">
+                                {% for post in latest %}
+                                <a href=""></a>
+                                <img src="{{ post.crest }}" class="close-popup" alt="icon">
+                                <p>{{ post.textfield}}</p>
+                                {% endfor %}
+                                <p>Оставьте завявку</p>
+                        </div>
+                </div>

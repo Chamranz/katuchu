@@ -1,0 +1,15 @@
+{% extends 'blocks.html' %}
+
+{% block content %}
+
+<h1> Оформление заказа </h1>
+<div class="background" >
+<form action="" method="post" class="FormLocation">{% csrf_token %}
+{% if form.email.errors %} {{form.email.errors}} {% endif %}
+
+  <label class="EmailPos">Впишите ваш e-mail и мы свяжемся с вами для уточнения заказа</label>
+  <p class="EmailPos">{{ form.email }}</p>
+  <input type="submit" class="LoginChange" value="Заказать" />
+</form>
+  </div>
+{% endblock %}

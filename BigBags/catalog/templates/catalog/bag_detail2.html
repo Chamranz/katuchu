@@ -1,0 +1,26 @@
+{% extends 'blocks.html' %}
+
+{% block content %}
+<div class="Product">
+
+<a href="{{ b.bag.url }}">{{ b.title }}</a>
+<a><img src="{{ bag.image.url }}" class="Photo"></a>
+</div>
+<div class="Describe">
+<a class="ProductTitle">{{ bag.title }}</a>
+        <p class="ProductSummary">{{ bag.summary }}</p>
+        <p class="ProductCost">{{ bag.cost }}</p>
+        <form method="POST">
+                <div class="popup_bg">
+                        <div class="popup">
+
+                                <p>Оставьте завявку</p>
+                        </div>
+                </div>
+        <a class="Basket" href="{%url 'order' %}">В корзину</a>
+                </form>
+        </div>
+
+
+
+{% endblock %}

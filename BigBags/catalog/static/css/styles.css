@@ -1,0 +1,129 @@
+/* static/css/mainstile2.css */
+
+.Header {
+font-family: 'Dancing Script';
+background-color: #e8e7e5;
+color: red;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 14%;
+}
+.container {
+width: 100%;
+  max-width: 1470px;
+  margin: 0 auto;
+  margin-top:-40px;
+}
+
+.container-fluid
+{
+       margin-top: 5%;
+    background-color: #f3f6fb;
+    width: 100%;
+    height: 100%;
+    right: 0;
+}
+
+
+.HeaderName{
+color: #363634;
+margin-left:10%;
+text-decoration:none;
+transition:0.2s
+}
+
+.HeaderName:hover{
+color: #524636;
+transition:0.2s
+}
+
+.sidebar-nav {
+width:70%;
+margin-left:55%;
+margin-top:2.5%;
+
+    }
+
+.sidebar-nav:hover {
+
+}
+
+.sidebar-style {
+    width: 70px; /* Ширина слоя */
+    height: 20px;
+    margin: -3px; /* Значение отступов */
+    padding: 10px; /* Поля вокруг текста */
+    transition:0.4s;
+    color: #B6ADAF;
+    font-family:montserrat;
+    text-decoration:none;
+    color: #524636;
+
+}
+
+.sidebar-style:hover{
+background-color:#B6ADAF;
+opacity:1;
+border-radius:0px;
+color:black;
+border-radius:0px;
+}
+
+.indexdiv{
+position:fixed;
+top:50%;
+left:40%;
+font-size:30px
+
+}
+.indextext{
+font-family:montserrat;
+color: white;
+background-color:black;
+}
+
+.indexbutton{
+position:fixed;
+top:55%;
+left:40%;
+font-size:30px;
+}
+
+.indexbuttonstyle{
+    margin-right:60px;
+    text-decoration:none;
+    font-size:22px;
+    border: 27px;
+    background-color: white;
+    color:black;
+    width: 146px;
+    height: 22px;
+    font-family: montserrat;
+    letter-spacing: 0.2em;
+    transition:0.4s;
+}
+
+
+.indexbuttonstyle:hover{
+color:white;
+background-color:black;
+transition:0,4s;
+}
+
+
+.footer {
+    max-width: 1470px;
+    margin: 0 auto;
+    margin-top: 1px;
+    position: absolute;
+    width: 100%;
+    font-family: montserrat;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #f3f6fb;
+    background-color: #5a3f2e;
+    margin-left: -8px;
+}
+}

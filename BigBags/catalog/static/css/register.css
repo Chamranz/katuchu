@@ -1,0 +1,26 @@
+.form_reg{
+padding-bottom: 31%;
+    margin-top: 4%;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin-left: 34%;
+    font-size: 13px;
+    padding-top: 11%;
+        transform: translate(-48%, -11%);
+}
+.btn_reg{
+
+    width: 20%;
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    border: 0px;
+}
+
+.btn_reg:hover{
+background-color:white;
+color:black;
+transition:0.4s;
+}
