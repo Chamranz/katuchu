@@ -1,0 +1,114 @@
+/* static/css/sumstyle2.css */
+
+.filter {
+
+    list-style:none;
+    width:14%;
+    margin-top:7%;
+    color:#606060;
+    background-color:#f7f7f7;
+
+}
+
+.filterName{
+    color:#606060;
+    font-family:montserrat;
+    line-height: 2.3;
+    font-weight:bold;
+
+}
+
+.filer_type {
+    line-height:2;
+    font-family:montserrat;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.filer_type:hover{
+    background-size: 100% 2px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.Choose {
+color:#606060;
+    font-family: 'Montserrat';
+    background-color: #f7f7f7;
+    line-height: 1.5;
+}
+
+.ButtonChoose {
+color:#606060;
+    border: 0;
+    background: #f7f7f7;
+    font-family: 'Montserrat';
+    margin-left: 40px;
+    transition:0.3s;
+}
+
+.ButtonChoose:hover {
+    border: 0;
+    color:white;
+    background: brown;
+    font-family: 'Montserrat';
+    margin-left: 40px;
+    transition:0.3s;
+}
+
+.photo {
+height: 300px;
+text-decoration:none;
+font-family:montserrat;
+color:#606060;
+    border: 0;
+    background: #f7f7f7;
+    transition:0.3s;
+
+}
+
+.PhotoLocation{
+    margin-left: 17%;
+    top: 20%;
+    margin-top: -20%;
+}
+.PhotoBlocks {
+display:inline-block;
+transition:0.3s;
+background: #f7f7f7;
+margin-inline:3.5%;
+margin-top:40px;
+
+}
+
+.PhotoBlocks:hover{
+border:2px;
+background-color:#606060;
+transition:0.3s;
+}
+
+.BagName{
+text-decoration:none;
+font-family:montserrat;
+color:black;
+background: rgba(0,0,0,0.0);
+}
+
+.BagName:hover{
+border:2px;
+transition:0.3s;
+background-color:#606060;
+color:white;
+}
+
+.pagination{
+text-decoration:none;
+font-family:montserrat;
+color:black;
+text-align:center;
+font-weight:bond;
+margin-top:5%;
+}

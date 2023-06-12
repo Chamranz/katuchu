@@ -1,0 +1,128 @@
+/* static/css/detail4.css */
+
+.Product{
+display:inline-block;
+marin-top:10%;
+width:37%;
+
+}
+
+.Photo{
+    margin-left: 20%;
+    margin-top: 20%;
+height: 450px;
+}
+
+.ProductTitle{
+font-family: 'Montserrat';
+font-weight: bold;
+margin-left:34%;
+font-size: 30px;
+}
+
+.ProductSummary{
+font-family: 'Montserrat';
+width:70%;
+margin-left:15%
+}
+
+.ProductCost{
+font-weight: bold;
+font-family: 'Montserrat';
+width:40%;
+margin-left:37%;
+font-size:20px;
+}
+
+.Describe{
+display: inline-block;
+    transform: translate(0%, -50%);
+    background: white;
+    width: 50%;
+}
+
+.open-popup{
+text-decoration: none;
+    margin-left: 16%;
+    font-family: 'Montserrat';
+    background-color: black;
+    color: white;
+    border: 5px;
+    transition: 0.3s;
+    font-size: 24px;
+}
+
+.open-popup:hover{
+font-family:'Montserrat';
+background-color:white;
+color:black;
+transition:0.3s;
+}
+
+.popup_bg{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.8);
+    display:none;
+}
+
+.popup{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:600px;
+    background: #ffffff;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+}
+
+.popup-bg{
+ position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.8);
+    display:none;
+
+}
+
+.close-popup{
+width:25px;
+}
+
+.popap{
+position:absolute;
+    top:50%;
+    left:50%;
+    width:600px;
+    background: #ffffff;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+}
+
+.sendmessage{
+text-decoration: none;
+    margin-left: 16%;
+    font-family: 'Montserrat';
+    background-color: black;
+    color: white;
+    border: 5px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.sendmessage:hover{
+font-family:'Montserrat';
+background-color:white;
+color:black;
+transition:0.3s;
+}
+
+.formtext{
+font-family:'Montserrat';
+background-color:white;
+color:black;}
